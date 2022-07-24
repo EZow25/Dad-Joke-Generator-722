@@ -31,7 +31,7 @@ body {
 }
 
 .title {
-  margin-top: 15%;
+  margin-top: 5%;
   font-size: 130%;
   font-weight: bold;
 }
@@ -56,15 +56,43 @@ body {
   transform: scale(1.1,1.1);
 }
 
+.search {
+  display: flex;
+  gap: 10px;
+}
+
 #dog {
   background-color: orange;
-  margin: 10px;
   border-radius: 5px;
-  padding: 10px;
   font-weight: bold;
+  width: 70;
 }
 
 #dog:hover {
+  background-color: gray;
+  transform: scale(1.1,1.1);
+}
+
+#dad {
+  background-color: orange;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 70;
+}
+
+#dad:hover {
+  background-color: gray;
+  transform: scale(1.1,1.1);
+}
+
+#hipster {
+  background-color: orange;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 70;
+}
+
+#hipster:hover {
   background-color: gray;
   transform: scale(1.1,1.1);
 }
@@ -88,8 +116,8 @@ body {
   height: auto;
   
 }
-  #funny {
-    width: 100%;
-    min-height: 150px;
-    max-height: 150px;
-  }
+#funny {
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px;
+}

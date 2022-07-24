@@ -22,6 +22,14 @@ document.addEventListener('click', event => {
   if (event.target.id === 'dog') {
     fetchGivenJoke('dog')
   }
+
+  if (event.target.id === 'dad') {
+    fetchGivenJoke('dad')
+  }
+
+  if (event.target.id === 'hipster') {
+    fetchGivenJoke('hipster')
+  }
 })
 
 async function fetchGivenJoke(search) {
@@ -34,6 +42,9 @@ async function fetchGivenJoke(search) {
       }
     })
     const joke = await response.json()
+    if (joke['results'].length === 0) {
+      fetchGivenJoke(search)
+    }
     console.log(joke)
     var p = document.getElementById("funny")
     p.innerText = joke['results'][0]['joke']
